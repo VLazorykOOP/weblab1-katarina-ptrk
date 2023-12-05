@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head lang="uk">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="Author" lang="uk" content="Петрик Катерина">
+		<meta name="Keywords" content="shop, learning">
+		<title>ComfortCraft</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body style="background-color: rgb(94, 83, 99);">
+		<header class="hdr" style="color:#D3DAE3;">
+			<nav>
+				<a href="shop.html"><img align="left" alt="smth went wrong" src="logo.png" width="180" height="40" id="logo"></a>
+				<a href="news.html" class="button_top">Новини</a>
+				<a href="me.html" class="button_top">Про мене</a>
+				<a href="lists.html" class="button_top">Послуги</a>
+				<a href="table.html" class="button_top">Таблиця</a>
+				<a href="register.html" class="button_top">Реєстрація</a>
+			</nav>
+		</header>
+	<main>
+		<hr>
+		<h2 style="text-align: center" class="text">Заповніть форму для реєстрації</h2>
+		<form accept-charset="UTF-8" id="reg" action="registered.html">
+			<fieldset>
+				<legend class="text">Персональна інформація</legend>
+				<label class="text"><b>Ваша пошта*: </b><input type="email" placeholder="mail@gmail.com" required></label><br>
+				<label class="text"><b>Номер телефону: </b><input pattern="[0-9]{10}" maxlength="10" placeholder="0xxxxxxxxx" type="tel"></label><br>
+				<label class="text"><b>Дата народження: </b><input type="date" min="1800-01-01"></label><br>
+			</fieldset>
+			<fieldset>
+				<legend class="text">Тип користувача</legend>
+				<label class="text" ><b>Покупець</b><input type="radio" name="type" checked></label><br>
+				<label class="text" ><b>Працівник</b><input type="radio" name="type"></label><br>
+			</fieldset>
+			<label class="text" ><b>Логін (нікнейм)*: </b><input type="text" required></label><br>
+			<label class="text" ><b>Пароль*: </b><input type="password" required></label><br>
+			<label class="text"><input type="reset" value="Очистити"></label>
+			<label class="text"><input type="image" class="text" src="button.png" alt="Зареєструватись!" style="width: 20px; height: auto;"></label>
+
+		</form>
+
+	</main>
+	<details>
+		<summary class="text">Автору</summary>
+		  <form>
+			<p class="text"><b>Декілька слів автору:</b></p>
+			<p><textarea rows="3" cols="45" name="text" maxlength="100"></textarea></p>
+			<p><input formenctype="application/x-www-form-urlencoded" type="submit" value="Відправити"></p>
+		  </form>
+		  <p class="text" style="font-size: 24px; text-align: center">Ви можете натиснути "дякую", а можете і не натискати, нічого не відбудеться. І вам, звичайно ж, дякую).</p>
+		<button>Дякую!</button>
+	</details>
+		<footer>
+			<address id="adr" title="Контактна інформація">
+				<br><br>
+				<ruby class="text">
+					Пошта: <a style="color:#878a92" href="mailto:example@gmail.com">example@gmail.com</a>
+					м. Чернівці, вул. Головна 194А.
+					<small title="Автор" style="color:#D3DAE3; font-family:'Verdana'">&copy;Петрик Катерина</small>
+					<rt style="text-align:center" class="text">Для рекламних пропозицій та запитань :)</rt>
+				</ruby>
+			</address>
+		</footer>
+	</body>
+</html>
